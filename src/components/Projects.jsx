@@ -1,7 +1,9 @@
 import React from "react";
 import { FaArrowRight, FaGithub } from "react-icons/fa";
 
-export default function Projects() {
+export default function Projects({projectRef}) {
+
+
   return (
     <section id="projects" className="bg-black text-white py-12 px-6">
       <div className="max-w-6xl mx-auto">
@@ -19,7 +21,7 @@ export default function Projects() {
               A full-featured shopping site with React, Node.js, MongoDB.
             </p>
             <a
-              href="https://github.com/yourusername/ecommerce-project"
+              href="https://github.com/DhammaMendhe/Ecommerse-website.git"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-green-400 hover:text-white transition-colors"
@@ -55,7 +57,7 @@ export default function Projects() {
               React app showing real-time weather from OpenWeather API.
             </p>
             <a
-              href="https://github.com/yourusername/weather-app"
+              href="https://github.com/DhammaMendhe/inotesbook-cloud.git"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-green-400 hover:text-white transition-colors"

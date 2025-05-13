@@ -3,17 +3,17 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 // import ScrollWatcher from "./components/ScrollWatcher";
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import { useEffect, useRef } from "react";
 import Skills from "./components/Skills";
+import CallToAction from "./components/CallToAction";
 
-  
 function App() {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init();
   }, []);
   const contactRef = useRef(null);
@@ -22,27 +22,27 @@ function App() {
 
   return (
     <>
-      {/* <Router>
-        <Navbar />
-        <button className="border">down</button>
+      <Router>
+        <Navbar
+          contactRef={contactRef}
+          projectsRef={projectsRef}
+          aboutRef={aboutRef}
+        />
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/about" element={<About/>} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/contact" element={<Contact />} />
-          <Route path="/project" element={<Projects />} />
+          <Route path="/calltoaction" element={<CallToAction />} />
         </Routes>
-      </Router> */}
-      <Navbar
-        contactRef={contactRef}
-        projectsRef={projectsRef}
-        aboutRef={aboutRef}
-      />
+      </Router>
       <Hero />
       <Skills />
       <div ref={projectsRef}>
-        <Projects  />
+        <Projects />
       </div>{" "}
-      <About />
+      <div ref={aboutRef}>
+        <About />
+      </div>{" "}
       <div ref={contactRef}>
         <Contact />
       </div>{" "}
