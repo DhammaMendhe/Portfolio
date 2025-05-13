@@ -29,10 +29,10 @@ function App() {
           aboutRef={aboutRef}
         />
         <Routes>
-          <Route path="/" element={<Hero />} />
+          {/* <Route path="/" element={<Hero />} /> */}
           {/* <Route path="/about" element={<About />} /> */}
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/calltoaction" element={<CallToAction />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          {/* <Route path="/calltoaction" element={<CallToAction />} /> */}
         </Routes>
       </Router>
       <Hero />

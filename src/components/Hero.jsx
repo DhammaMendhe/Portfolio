@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Hero() {
+  
   return (
     <section className="bg-black text-white py-10 px-6">
       <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto gap-8">
